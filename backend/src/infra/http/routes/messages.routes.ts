@@ -10,6 +10,6 @@ const getLast3MessagesController = new GetLast3MessagesController();
 const route = Router();
 
 route.post('/messages', ensureAuthenticated, createMessageController.handle);
-route.post('/messages/last3', getLast3MessagesController.handle);
+route.get('/messages/last3', getLast3MessagesController.handle);
 
 export default route;
