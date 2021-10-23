@@ -19,11 +19,11 @@
 
     .signInWithGithub {
         background: #ffcd1e;
-        margin-top: 32px;
-        padding: 0 40px;
-        height: 56px;
+        margin-top: 2rem;
+        padding: 0 2.5rem;
+        height: 3.5rem;
         color: #09090a;
-        font-size: 14px;
+        font-size: 0.8rem;
         font-weight: bold;
         text-transform: uppercase;
         text-decoration: none;
@@ -35,11 +35,27 @@
         justify-content: center;
 
         svg {
-            margin-right: 16px;
+            margin-right: 1rem;
         }
 
         &:hover {
             filter: brightness(0.9);
+        }
+    }
+
+    @media(max-width: 1080px){
+        padding: 32rem 3rem 8rem;
+        font-size: 0.8rem;
+
+        background-size: 23rem;
+        
+        .signInWithGithub {
+            font-size: 1rem;
+            padding: 1rem;
+
+            svg {
+                margin-right: 0.5rem;
+            }
         }
     }
 }

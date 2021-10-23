@@ -5,11 +5,11 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 453px;
+    grid-template-columns: 1fr 28.5rem;
     column-gap: 120px;
     position: relative;
 
-    @media(max-width: 960px){
+    @media(max-width: 968px){
         display: flex;
         flex-direction: column;
         
