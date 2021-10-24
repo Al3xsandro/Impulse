@@ -50,9 +50,7 @@ export function MessageList() {
             keyboardShouldPersistTaps="never"
         >
             {
-                currentMessages.map((message) => {
-                    <Message key={message.user_id} data={message} />
-                })
+                currentMessages.map((message) => <Message key={message.id} data={message} />)
             }
         </ScrollView>
     )
