@@ -51,7 +51,7 @@ export function MessageList() {
         >
             {
                 currentMessages.map((message) => {
-                    <Message key={message.id} data={message} />
+                    <Message key={message.user_id} data={message} />
                 })
             }
         </ScrollView>

@@ -8,6 +8,7 @@ import { styles } from './style';
 
 export type MessageProps = {
     id: string;
+    user_id: string;
     text: string;
     user: {
         name: string;
