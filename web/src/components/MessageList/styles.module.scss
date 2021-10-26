@@ -16,7 +16,17 @@
     }
 
     @media(max-width: 968px){
-        display: none;
+        max-width: 20rem;
+        
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@keyframes messages {
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -32,6 +42,10 @@
 
     .message {
         max-width: 27.5rem;
+        
+        animation: messages 0.4s forwards ease;
+        opacity: 0;
+        transform: translateX(-10rem);
 
         &:nth-child(2) {
             margin-left: 5rem;
